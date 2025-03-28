@@ -1,0 +1,27 @@
+Write a program to reverse a 3-digit number.
+Input Format
+Input consists of an integer.
+Constraints
+NA
+Output Format
+The output will be the reverse of the input integers.
+Sample Input 0
+456
+Sample Output 0
+654
+Sample Input 1
+123
+/............................................................/
+ #include <stdio.h>
+int main() {
+
+    int n;
+    scanf("%d",&n);
+    int m=0;
+    while(n!=0){
+        m=n%10;
+        printf("%d",m);
+        n=n/10;
+    }
+    return 0;
+}
