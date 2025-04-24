@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char v[5];
+    printf("Enter the  values: ");
+    scanf("%s",v);
+    for(int i=5;i>=0;i--){
+            printf("%c\n",v[i]);
+    }
+    return 0;
+}
