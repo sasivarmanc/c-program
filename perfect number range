@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int start,end,sum=0;
+    printf("Enter the number range: ");
+    scanf("%d%d",&start,&end);
+    for(int h=start;h<=end;h++)
+    {
+         for(int i=1;i<=h/2;i++)
+    {
+        if(h%i==0)
+        {
+            sum+=i;
+        }
+    }
+    if(sum==h)
+            {
+        printf("%d\n",h);
+            }
+            sum=0;
+    }
+    return 0;
+}
