@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int n,v=0,s;
+    printf("Enter a Number: ");
+    scanf("%d",&n);
+    int temp=n;
+    for(int i=0;n!=0;i++)
+    {
+        s=n%10;
+        n=n/10;
+        v+=s*s*s;
+    }
+    printf("%d\n",v);
+    if(temp==v)
+    {
+        printf("It is an Armstrong Number.");
+    }
+    else
+    {
+        printf("It is Not an Armstrong Number.");
+    }
+    return 0;
+}
