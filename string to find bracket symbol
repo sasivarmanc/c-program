@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+    char s[100];
+    int count=0,count1=0,sum=0,sum1=0,add=0,add1=0;
+    printf("Enter the character : ");
+    scanf("%s",s);
+    for(int i=0;s[i]!='\0';i++)
+    {
+        if(s[i]=='(')
+        {
+            count++;
+        }
+        else if(s[i]==')')
+        {
+            count1++;
+        }
+        else if(s[i]=='{')
+        {
+            sum++;
+        }
+        else if(s[i]=='}')
+        {
+            sum1++;
+        }
+        else if(s[i]=='[')
+        {
+            add++;
+        }
+        else if(s[i]==']')
+        {
+            add1++;
+        }
+    }
+    if(count==count1&&sum==sum1&&add==add1)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+    return 0;
+}
