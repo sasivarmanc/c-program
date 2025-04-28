@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct student
+    {
+        int roll;
+        int age;
+        char name[30];
+        float mark;
+    }st;
+int main()
+{
+   
+   struct student st;
+   printf("Enter the roll number: ");
+   scanf("%d",&st.roll);
+   printf("Enter the age: ");
+   scanf("%d",&st.age);
+   printf("Enter the name: ");
+   scanf("%s",st.name);
+   printf("Enter the mark: ");
+   scanf("%f",&st.mark);
+   printf("%d\n%d\n%s\n%.2f\n",st.roll,st.age,st.name,st.mark);
+   return 0;
+}
