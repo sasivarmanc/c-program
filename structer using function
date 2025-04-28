@@ -1,0 +1,34 @@
+#include<stdio.h>
+struct addition
+{
+    int num1;
+
+int num2;
+
+}st;
+
+int add(struct addition st)
+
+{
+
+int ad=st.num1+st.num2;
+
+}
+
+int main() {
+
+int num1, num2;
+
+printf("enter num1:");
+
+scanf("%d",&st.num1);
+
+printf("Enter num2:");
+
+scanf("%d",&st.num2);
+
+printf("Addition:%d", add(st));
+
+return 0;
+
+}
