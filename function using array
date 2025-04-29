@@ -1,0 +1,28 @@
+#include<stdio.h>
+int max(float a[],float n)
+{
+    float m=a[0];
+    for(int i=1;i<n;i++)
+    {
+        if(a[i]<m)
+        {
+            m=a[i];
+        }
+    }
+    return m;
+}
+int main()
+{
+    
+    float a[100],n;
+    printf("Enter the no.of Element in an Array: ");
+    scanf("%f",&n);
+    printf("Enter the Temperature: ");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%f",&a[i]);
+    }
+    float s=max(a,n);
+    printf("The lowest temperature is %.02f degrees Celsius. ",s);
+    return 0;
+}
